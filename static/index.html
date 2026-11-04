@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#141617">
+  <meta name="description" content="Маша, с днём рождения! Твой день. Твоя скорость. Твои правила.">
+  <title>МАША / FULL THROTTLE — с днём рождения!</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <svg class="paint-definitions" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+      <filter id="car-paint" color-interpolation-filters="sRGB">
+        <feComponentTransfer>
+          <feFuncR id="paint-red" type="table" tableValues="0 1"/>
+          <feFuncG id="paint-green" type="table" tableValues="0 1"/>
+          <feFuncB id="paint-blue" type="table" tableValues="0 1"/>
+        </feComponentTransfer>
+      </filter>
+    </defs>
+  </svg>
+  <a class="skip-link" href="#route">К маршруту</a>
+  <div class="site-shell">
+    <header class="header">
+      <a class="brand" href="#" aria-label="Masha Grand Prix — главная"><span class="brand-mark" aria-hidden="true">M<span>↗</span></span><span>MASHA<span class="brand-sub">GRAND PRIX / BIRTHDAY EDITION</span></span></a>
+      <div class="header-right"><span class="edition"><span class="live-dot"></span> 04 НОЯБРЯ · ТВОЙ ДЕНЬ</span><button class="sound-button" id="sound" aria-pressed="false"><span aria-hidden="true">♫</span><span id="sound-label">Звук выкл.</span></button></div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="short-line"></span> СПЕЦИАЛЬНЫЙ ЗАЕЗД ДЛЯ ОСОБЕННОЙ ДЕВЧОНКИ</div>
+          <h1 id="hero-title">МАША.<br>ПОЛНЫЙ<br><span>ВПЕРЁД<span class="title-period">.</span></span></h1>
+          <p class="hero-lead">С днём рождения, Машулик!<br>Твой день. Твоя скорость. Твои правила.</p>
+          <div class="hero-actions"><button class="button primary" data-open="race">ЗАВЕСТИ ЭТОТ ДЕНЬ <span aria-hidden="true">↗</span></button><span class="duration">3 этапа<br><strong>100% твоего вайба</strong></span></div>
+          <div class="hero-tags"><span>⚡ ХАРАКТЕР В КОМПЛЕКТЕ</span><span>∞ ЗАПАС МОЩНОСТИ</span></div>
+        </div>
+        <div class="hero-art">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <span class="art-corner">01 / TOYOTA CARINA ED</span>
+          <span class="huge-number" aria-hidden="true">M.</span>
+          <div class="car-floor-glow" aria-hidden="true"></div>
+          <img class="hero-car" src="/car-hero.png" width="1536" height="1024" alt="Toyota Carina ED Маши с тёмными стёклами и выбранным цветом кузова" fetchpriority="high" decoding="async">
+          <div class="pilot-ticket"><span class="ticket-label">ПИЛОТ ДНЯ</span><strong>GYM_MAVYIRR <span>↗</span></strong><div class="ticket-bottom"><span>КЛАСС: НЕУКРОТИМАЯ</span><span class="barcode" aria-hidden="true"></span></div></div>
+          <div class="car-customizer" role="group" aria-label="Цвет кузова машины"><span>ТВОЙ ЦВЕТ</span><button class="swatch lime active" data-color="lime" aria-label="Лайм" aria-pressed="true"></button><button class="swatch purple" data-color="purple" aria-label="Фиолетовый" aria-pressed="false"></button><button class="swatch ice" data-color="ice" aria-label="Ледяной" aria-pressed="false"></button></div>
+          <span class="art-coordinate">55° BIRTHDAY / ∞ ENERGY</span>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Пожелание"><div>БОЛЬШЕ ДРАЙВА <span>✳</span> БОЛЬШЕ СИЛЫ <span>✳</span> БОЛЬШЕ ТЕБЯ <span>✳</span> С ДНЁМ РОЖДЕНИЯ <span>✳</span> БОЛЬШЕ ДРАЙВА <span>✳</span> БОЛЬШЕ СИЛЫ <span>✳</span></div></section>
+
+      <section class="route-section" id="route" aria-labelledby="route-title">
+        <div class="section-heading"><div><div class="eyebrow">ТВОЙ ПРАЗДНИЧНЫЙ МАРШРУТ</div><h2 id="route-title">Сегодня всё по-твоему.</h2></div><p>Никаких обязательных кругов.<br>Выбирай любой этап — ты уже чемпионка.</p></div>
+        <div class="route-grid">
+          <button class="route-card" data-open="race"><span class="card-top"><span>01 / НАБРАТЬ СКОРОСТЬ</span><span class="stage-status" data-status="race">↗</span></span><span class="route-icon road-icon" aria-hidden="true"><i></i><i></i><i></i></span><span class="route-name">Только вперёд.</span><span class="route-description">Лови подарки, обходи конусы.<br>Эта полоса — твоя.</span><span class="card-bottom"><span>МИНИ-ЗАЕЗД · 30 СЕКУНД</span><span>→</span></span></button>
+          <button class="route-card" data-open="gym"><span class="card-top"><span>02 / ПОКАЗАТЬ ХАРАКТЕР</span><span class="stage-status" data-status="gym">↗</span></span><span class="route-icon dumbbell-icon" aria-hidden="true">━<i></i><b></b></span><span class="route-name">Сильная. И точка.</span><span class="route-description">Праздничный подход.<br>Жмём только на кнопку.</span><span class="card-bottom"><span>ЗАЛ · 8 ПОВТОРЕНИЙ</span><span>→</span></span></button>
+          <button class="route-card finale-card" data-open="final"><span class="card-top"><span>03 / ЗАБРАТЬ СВОЁ</span><span class="stage-status" data-status="final">↗</span></span><span class="route-icon star-icon" aria-hidden="true">✳</span><span class="route-name">Твой звёздный час.</span><span class="route-description">Пожелания без ограничителя.<br>И целая коллекция тёплых слов.</span><span class="card-bottom"><span>ФИНАЛ · МАКСИМУМ ЛЮБВИ</span><span>→</span></span></button>
+        </div>
+      </section>
+      <section class="manifesto"><span aria-hidden="true">↗</span><p>Пусть жизнь подкидывает поводы<br><strong>улыбаться так же часто, как ты добавляешь вес.</strong></p><span class="mini-label">NO LIMITS.<br>JUST MASHA.</span></section>
+    </main>
+    <footer><span>MASHA GRAND PRIX © BIRTHDAY EDITION</span><span>СОЗДАНО ДЛЯ ТВОЕГО ДНЯ <span class="lime-text">✳</span></span></footer>
+  </div>
+
+  <dialog id="experience" aria-labelledby="experience-title">
+    <div class="dialog-shell"><header class="dialog-header"><span class="eyebrow" id="stage-label">01 / ЗАЕЗД</span><button id="close-dialog" class="icon-button" aria-label="Закрыть интерактив">✕</button></header><div id="experience-content"></div></div>
+  </dialog>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <div id="toast" class="toast" role="status"></div>
+  <noscript><div class="noscript">Маша, с днём рождения! Пусть хватает сил на мечты, драйва на приключения и времени на себя. Для игр включи JavaScript в браузере.</div></noscript>
+</body>
+</html>

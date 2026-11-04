@@ -1,0 +1,2 @@
+# Third-party runtime dependencies: none.
+# The server uses only the Python standard library.
